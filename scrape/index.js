@@ -23,7 +23,8 @@ const GET = (options) => {
 module.exports.GET = GET
 
 GET({
-  'www.google.com'
-}).then(page => {
+  host: 'www.google.com'
+}).then((page) => {
   const $ = cheerio.load(page)
+  console.log($);
 })
