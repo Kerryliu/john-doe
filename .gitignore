@@ -2,3 +2,4 @@
 node_modules
 scrape/node_modules
 yarn.lock
+seed.json
