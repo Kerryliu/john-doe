@@ -28,5 +28,6 @@ const seed = require('./seed.json');
 
 
 GET(seed).then((page) => {
-		console.log(page);
+    let $ = cheerio.load(page);
+		console.log($('table a').text());
 });
